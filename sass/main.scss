@@ -1,0 +1,47 @@
+@import "../sass/utils/base";
+
+@import "../sass/utils/variables";
+
+@import "../sass/components/container";
+
+// logo
+@import "../sass/components/logo";
+
+// index__nav  --  секция навигации
+@import "../sass/components/nav";
+
+// index__contact-nav  --  секция контактов
+@import "../sass/components/contact-nav";
+
+// index__contact-nav  --  секция контактов
+@import "../sass/components/burger";
+
+// index__hero  --  секция hero
+@import "../sass/components/hero";
+
+// index__benefits  --  секция преимуществ
+@import "../sass/components/benefits";
+
+// index__whatwedo  --  секция Чем мы занимаемся
+@import "../sass/components/whatwedo";
+
+// index__our-team  --  секция Наша команда
+@import "../sass/components/our-team";
+
+// index__customer  --  секция постоянныe клиенты
+@import "../sass/components/customer";
+
+// index  portfolio__footer  --  секция футер
+@import "../sass/components/footer";
+
+// -- portfolio
+
+// терлефон:  @media screen and (min-width: 480px) and (max-width: 768px) {
+// плашет: @media screen and (min-width: 768px) and (max-width: 1140px)
+// 1
+// @import "../sass/components/feature";
+
+.feature-set {
+  list-style: none;
+}
+// @import "../sass/components/feature";

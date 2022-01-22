@@ -1,0 +1,23 @@
+.burger {
+  width: 24px;
+  height: 16px;
+  margin: 0;
+  padding-left: 295px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burger_icon {
+  width: 24px;
+  height: 16px;
+  fill: $secondary-text-color;
+  &:hover {
+    fill: $accent-color-button;
+  }
+}

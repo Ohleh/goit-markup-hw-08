@@ -1,0 +1,19 @@
+.logo {
+  font-family: $logo-font-family;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  // padding-left: 15px;
+  padding-bottom: 16px;
+}
+.logo--start {
+  color: $accent-color-button;
+}
+.logo--end {
+  color: $secondary-text-color;
+}
+.logo__footer--end {
+  color: $primary-bg-color;
+}

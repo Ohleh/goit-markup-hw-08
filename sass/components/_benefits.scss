@@ -1,0 +1,92 @@
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 0;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.benefits__item {
+  width: 270px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    width: 450px;
+  }
+  &::before {
+    content: "";
+    height: 120px;
+    display: block;
+    background-color: $benefits-item-bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+.benefits__item--aerial {
+  &::before {
+    background-image: url("../images/svg/benefits/benefits-aerial.svg");
+  }
+}
+.benefits__item--clock {
+  &::before {
+    background-image: url("../images/svg/benefits/benefits-clock.svg");
+  }
+}
+.benefits__item--diagarm {
+  &::before {
+    background-image: url("../images/svg/benefits/benefits-diagram.svg");
+  }
+}
+.benefits__item--astronaut {
+  &::before {
+    background-image: url("../images/svg/benefits/benefits-astronaut.svg");
+  }
+}
+.benefits__item {
+  & + .benefits__item {
+    margin-left: 30px;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    width: calc(100% - 4 * 15px) / 2;
+    margin: 15px;
+  }
+}
+.benefits__title {
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+  }
+}
+.benefits__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 3%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: $primary-text-color;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    text-align: left;
+    // margin-bottom: 30px;
+  }
+}
