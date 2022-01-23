@@ -54,7 +54,6 @@ textarea {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 0.5px solid tomato;
   }
 }
 
@@ -317,7 +316,7 @@ textarea {
 
 .burger {
   width: 24px;
-  height: 16px;
+  height: 24px;
   margin: 0;
   padding-left: 295px;
   display: -webkit-box;
@@ -341,12 +340,41 @@ textarea {
 
 .burger_icon {
   width: 24px;
-  height: 16px;
+  height: 24px;
   fill: #212121;
 }
 
 .burger_icon:hover {
   fill: #2196f3;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.menu-button .is-open .icon-burger {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-container .is-open {
+  display: block;
 }
 
 .pre-hero__line {
@@ -381,11 +409,11 @@ textarea {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1170px) {
   .hero__headline {
     padding-top: 118px;
     font-size: 26px;
-    line-height: 1.61px;
+    line-height: 1.61;
   }
 }
 
@@ -1029,7 +1057,7 @@ textarea {
   padding-bottom: 60px;
 }
 
-.footer--position {
+.footer__position {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1041,7 +1069,7 @@ textarea {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .footer--position {
+  .footer__position {
     display: block;
   }
 }
@@ -1060,6 +1088,12 @@ textarea {
   .footer__adress {
     margin-bottom: 60px;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__adress {
+    padding-bottom: 60px;
   }
 }
 
@@ -1088,6 +1122,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__adress__contact {
+    margin-top: 8px;
+  }
+}
+
 .footer__first {
   list-style: none;
   margin: 0;
@@ -1100,6 +1140,14 @@ textarea {
     display: block;
     text-align: center;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__first {
+    display: block;
+    text-align: center;
+    margin-right: 70px;
   }
 }
 
@@ -1132,7 +1180,7 @@ textarea {
   margin: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1170px) {
   .footer__title {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1159,7 +1207,7 @@ textarea {
   padding-left: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1170px) {
   .footer__second__social {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1224,6 +1272,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__subscribe {
+    display: block;
+  }
+}
+
 .footer__subscribe__label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1233,6 +1287,15 @@ textarea {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer__subscribe__label {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .footer__subscribe__label {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1282,7 +1345,20 @@ textarea {
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .footer__subscribe__button {
     display: block;
-    margin: 20px auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__subscribe__button {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1306,6 +1382,12 @@ textarea {
   margin-left: 10px;
   margin-right: 28px;
   background-image: url(../images/svg/icon-send.svg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__position-tablet {
+    display: inline-block;
+  }
 }
 
 .button-portfolio {
@@ -1569,6 +1651,12 @@ textarea {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   margin-top: -10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .product__info {
+    height: 141px;
+  }
 }
 
 .product__title {

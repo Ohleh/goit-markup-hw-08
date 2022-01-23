@@ -27,12 +27,15 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    // margin: 0 auto;
-    // display: inline;
+  @media screen and (min-width: 480px) and (max-width: 1170px) {
     padding-top: 118px;
     font-size: 26px;
-    line-height: 1.61px;
+    line-height: 1.61;
+    // margin: 0 auto;
+    // display: block;
+    // padding-top: 118px;
+    // font-size: 26px;
+    // line-height: 1.61px;
   }
 }
 .hero__button {
