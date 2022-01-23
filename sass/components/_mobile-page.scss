@@ -1,0 +1,109 @@
+.mobile-page {
+  display: inline-block;
+  width: 480px;
+  margin: 0;
+}
+.mobile__close-icon {
+  width: 19px;
+  height: 19px;
+  margin-left: 436px;
+  margin-top: 21px;
+  margin-right: 25px;
+  margin-bottom: 9px;
+  fill: $secondary-text-color;
+  &:hover {
+    fill: $accent-color-button;
+  }
+}
+.nav__mobile-list {
+  list-style: none;
+  margin-top: 0;
+  margin-left: 40px;
+  margin-bottom: 302px;
+  padding: 0;
+}
+.nav__mobile-link {
+  font-family: $font-family;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $accent-color-button;
+  }
+}
+.nav__mobile-item {
+  margin-bottom: 35px;
+}
+
+.contact-mobile__list {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-left: 0;
+  margin-bottom: 64px;
+}
+
+.contact-mobile__item {
+  margin-bottom: 32px;
+}
+
+.contact-mobile__link-mail {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.33;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color-button;
+  }
+}
+.contact-mobile__link-phone {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color-button;
+  }
+}
+
+.footer__mob-list {
+  display: flex;
+}
+
+.footer__mob-item {
+  list-style: none;
+  text-decoration: none;
+  padding-right: 10px;
+  padding-left: 0;
+  margin-left: 40;
+}
+
+.footer__mob-link {
+  color: $accent-color-button;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  &::after {
+    content: "";
+    // display: block;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    // background-position: center;
+    margin-left: 10px;
+  }
+}
