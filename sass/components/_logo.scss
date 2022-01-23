@@ -7,7 +7,7 @@
   padding-top: 16px;
   // padding-left: 15px;
   padding-bottom: 16px;
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     font-style: normal;
     font-size: 24px;
     line-height: 1.16;
@@ -16,8 +16,8 @@
 }
 .logo--start {
   color: $accent-color-button;
-  // ipad  крайні відступи  від країв
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  // phone + ipad:  крайні відступи  від країв
+  @media screen and (min-width: 480px) and (max-width: 1170px) {
     padding-left: 15px;
   }
 }

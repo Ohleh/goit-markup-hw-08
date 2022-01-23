@@ -8,26 +8,33 @@
   padding-left: 0;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: block;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // кастиль 45+15
+    padding-top: 45px;
+    // кастиль 30+30
+    padding-bottom: 30px;
     text-align: center;
   }
   // ipad для переносу сітки
-  @media screen and (min-width: 768px) and (max-width: 1140px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // кастиль 45+15
+    padding-top: 45px;
+    // кастиль 30+30
+    padding-bottom: 30px;
   }
 }
 .benefits__item {
   width: 270px;
+  outline: 0.5 solid aqua;
   // phone збільшений розмір сірого фона
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
+    margin-bottom: 15px;
+    outline: 0.5 solid aqua;
   }
   // ipad збільшений розмір сірого фона
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     width: 354px;
   }
   &::before {
@@ -64,33 +71,44 @@
 .benefits__item {
   & + .benefits__item {
     margin-left: 30px;
-    // phone
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-      margin-left: 0;
-      margin-top: 30px;
+
+    // phone коригуємо лівий марджин для calc
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      margin-left: 15px;
     }
     // ipad коригуємо лівий марджин для calc
-    @media screen and (min-width: 768px) and (max-width: 1139px) {
+    @media screen and (min-width: 768px) and (max-width: 1170px) {
       margin-left: 15px;
     }
   }
+
+  // phone   авто перенос сітки
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: calc(100% - 2 * 15px) / 1;
+    margin: 15px;
+  }
   // ipad авто перенос сітки
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 767px) and (max-width: 1170px) {
     width: calc(100% - 3 * 15px) / 2;
     margin: 15px;
   }
 }
+.benefits__item {
+  margin-bottom: 30px;
+}
 .benefits__title {
+  outline: 0.5 solid aqua;
   color: $secondary-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
   }
 }
 .benefits__description {
+  outline: 0.5 solid aqua;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -99,8 +117,8 @@
   margin-top: 10px;
   margin-bottom: 0;
   color: $primary-text-color;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     text-align: left;
-    // margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }

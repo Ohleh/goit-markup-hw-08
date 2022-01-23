@@ -40,7 +40,7 @@
   }
   // ipad: падінг-топ до тайтла. і падінг-ботом до
   // ipad: флекс для авто переноса сітки
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     padding-top: 30px;
     // костиль: марджини сумарні  15+45
     padding-bottom: 45px;
@@ -59,11 +59,11 @@
     }
   }
   // ipad зміна розміру карточки
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     width: 354px;
   }
   // ipad авто перенос сітки
-  @media screen and (min-width: 768px) and (max-width: 1139px) {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     width: calc(100% - 3 * 15px) / 2;
     margin: 15px;
   }
@@ -112,7 +112,7 @@
   padding: 0;
   list-style: none;
   // phone + ipad: центрування соц іконок
-  @media screen and (min-width: 480px) and (max-width: 1139px) {
+  @media screen and (min-width: 480px) and (max-width: 1170px) {
     justify-content: center;
   }
 }
