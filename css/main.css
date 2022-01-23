@@ -1491,6 +1491,7 @@ textarea {
 }
 
 .footer__mob-item {
+  display: inline;
   list-style: none;
   text-decoration: none;
   padding-right: 10px;
@@ -1499,6 +1500,7 @@ textarea {
 }
 
 .footer__mob-link {
+  display: inline-block;
   color: #2196f3;
   font-family: Roboto, VHelvetica Neue, sans-serif;
   font-style: normal;
@@ -1508,8 +1510,13 @@ textarea {
   letter-spacing: 0.02em;
 }
 
-.footer__mob-link::after {
+.footer__mob-item {
+  display: inline;
+}
+
+.footer__mob-item:not(:last-child):after {
   content: "";
+  display: inline;
   border-left: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
