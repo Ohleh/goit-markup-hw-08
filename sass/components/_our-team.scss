@@ -33,7 +33,7 @@
   padding-top: 50px;
   padding-bottom: 94px;
   // phone: падінг-топ до тайтла. і падінг-ботом до
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 60px;
     display: block;
@@ -42,11 +42,12 @@
   // ipad: флекс для авто переноса сітки
   @media screen and (min-width: 768px) and (max-width: 1139px) {
     padding-top: 30px;
-    padding-bottom: 60px;
+    // костиль: марджини сумарні  15+45
+    padding-bottom: 45px;
     display: flex;
     flex-wrap: wrap;
     // ipad костиль для нижнього падінга
-    margin-bottom: -15px;
+    // padding-bottom: -15px;
   }
 }
 .our-team__card {

@@ -678,7 +678,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .our-team__list {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -689,7 +689,7 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .our-team__list {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -697,7 +697,6 @@ textarea {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-bottom: -15px;
   }
 }
 
@@ -849,6 +848,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .customer__headline {
+    padding-top: 60px;
+  }
+}
+
 .customer__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -873,6 +878,20 @@ textarea {
     padding-top: 50px;
     padding-bottom: 60px;
     margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .customer__list {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-bottom: 45px;
   }
 }
 
@@ -908,6 +927,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .customer__item + .customer__item {
+    margin-left: 15px;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .customer__item {
     width: 210px;
@@ -915,12 +940,18 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .customer__item {
-    width: -webkit-calc((100% - 6 * 15px) / 3);
-    width: calc((100% - 6 * 15px) / 3);
+    width: 226px;
+    padding: 16px 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .customer__item {
+    width: -webkit-calc(100% - 6 * 15px)/3;
+    width: calc(100% - 6 * 15px)/3;
     margin: 15px;
-    background-color: yellow;
   }
 }
 

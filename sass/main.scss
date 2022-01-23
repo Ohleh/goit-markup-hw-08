@@ -62,12 +62,14 @@
 //
 //
 //
-// phone + ipad: авто перенос сітки
-// ul: @media screen and (min-width: 768px) and (max-width: 1139px) {
+// phone + ipad: авто перенос сітки:
+// ul: ipad флекс для авто переносу сітки
+//     @media screen and (min-width: 768px) and (max-width: 1139px) {
 //     display: flex;
 //     flex-wrap: wrap;
 //   }
-// li: @media screen and (min-width: 768px) and (max-width: 1139px) {
+// li: ipad авто перенос сітки
+//     @media screen and (min-width: 768px) and (max-width: 1139px) {
 //     width: calc(100% - 3 * 15px) / 2;
 //     margin: 15px;
 //   }
