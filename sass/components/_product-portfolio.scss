@@ -22,7 +22,11 @@
       margin-bottom: -15px;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 1170px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 25px;
+    margin-top: -15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     padding-top: 40px;
     margin-top: -15px;
   }
@@ -106,6 +110,7 @@
   font-family: $font-family;
   font-style: 700;
   font-size: 18px;
+  line-height: 2;
   text-align: Left;
   letter-spacing: 0.06em;
   padding-top: 20px;

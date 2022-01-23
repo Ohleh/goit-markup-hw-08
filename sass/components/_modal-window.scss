@@ -131,7 +131,7 @@
     line-height: 0.95;
   }
   // phone зміна тексту згоди
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1170px) {
     font-size: 12px;
     line-height: 1.16;
   }
@@ -146,7 +146,7 @@
   color: $accent-color-button;
   line-height: 1;
   // phone зміна тексту згоди
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1170px) {
     font-size: 12px;
     line-height: 1.16;
   }

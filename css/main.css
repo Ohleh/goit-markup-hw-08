@@ -1320,7 +1320,7 @@ textarea {
   padding-top: 94px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1170px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .button-portfolio {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1329,6 +1329,20 @@ textarea {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-top: 60px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .button-portfolio {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 60px;
     margin-bottom: -15px;
   }
@@ -1431,7 +1445,14 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1170px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .product__grid {
+    padding-top: 25px;
+    margin-top: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .product__grid {
     padding-top: 40px;
     margin-top: -15px;
@@ -1556,6 +1577,7 @@ textarea {
   font-family: Roboto, VHelvetica Neue, sans-serif;
   font-style: 700;
   font-size: 18px;
+  line-height: 2;
   text-align: Left;
   letter-spacing: 0.06em;
   padding-top: 20px;
@@ -1901,7 +1923,7 @@ textarea {
   line-height: 0.95;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1170px) {
   .agreement__text {
     font-size: 12px;
     line-height: 1.16;
@@ -1919,7 +1941,7 @@ textarea {
   line-height: 1;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1170px) {
   .agreement__terms {
     font-size: 12px;
     line-height: 1.16;

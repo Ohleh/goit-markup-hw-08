@@ -2,12 +2,22 @@
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  @media screen and (min-width: 480px) and (max-width: 1170px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 60px;
+    margin-left: 15px;
+    //phone  костиль для кнопок
+    // margin-bottom: -15px;
+    // padding-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
     //phone  костиль для кнопок
     margin-bottom: -15px;
+    // padding-bottom: 10px;
   }
 }
 .button-portfolio__item {
