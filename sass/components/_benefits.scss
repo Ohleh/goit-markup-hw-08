@@ -12,15 +12,23 @@
     padding-bottom: 60px;
     text-align: center;
   }
+  // ipad для переносу сітки
   @media screen and (min-width: 768px) and (max-width: 1140px) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .benefits__item {
   width: 270px;
+  // phone збільшений розмір сірого фона
   @media screen and (min-width: 480px) and (max-width: 768px) {
     width: 450px;
+  }
+  // ipad збільшений розмір сірого фона
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    width: 354px;
   }
   &::before {
     content: "";
@@ -56,13 +64,19 @@
 .benefits__item {
   & + .benefits__item {
     margin-left: 30px;
+    // phone
     @media screen and (min-width: 480px) and (max-width: 768px) {
       margin-left: 0;
       margin-top: 30px;
     }
+    // ipad коригуємо лівий марджин для calc
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+      margin-left: 15px;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1140px) {
-    width: calc(100% - 4 * 15px) / 2;
+    width: calc(100% - 3 * 15px) / 2;
+
     margin: 15px;
   }
 }
