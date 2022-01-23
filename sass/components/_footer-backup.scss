@@ -140,7 +140,7 @@
   padding-left: 0;
   list-style: none;
   margin: 0;
-  // outline: 0.5px solid rgb(200, 255, 71);
+  //   outline: 0.5px solid rgb(200, 255, 71);
 }
 .footer__subscribe {
   display: flex;
@@ -230,9 +230,9 @@
   }
 }
 
-// .footer__position-tablet {
-//   @media screen and (min-width: 768px) and (max-width: 1170px) {
-//     display: flex;
-
-//   }
-// }
+.footer__position-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    display: inline-block;
+    // padding-bottom: 60px;
+  }
+}

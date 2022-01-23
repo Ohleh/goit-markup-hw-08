@@ -1062,10 +1062,10 @@ textarea {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -1382,12 +1382,6 @@ textarea {
   margin-left: 10px;
   margin-right: 28px;
   background-image: url(../images/svg/icon-send.svg);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1170px) {
-  .footer__position-tablet {
-    display: inline-block;
-  }
 }
 
 .button-portfolio {
