@@ -8,20 +8,20 @@
   padding-left: 0;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: block;
-    // кастиль 45+15
     padding-top: 45px;
-    // кастиль 30+30
-    padding-bottom: 30px;
+    margin-top: -15px;
+    padding-bottom: 60px;
+    margin-bottom: -30px;
     text-align: center;
   }
   // ipad для переносу сітки
   @media screen and (min-width: 768px) and (max-width: 1170px) {
     display: flex;
     flex-wrap: wrap;
-    // кастиль 45+15
     padding-top: 45px;
-    // кастиль 30+30
-    padding-bottom: 30px;
+    margin-top: -15px;
+    padding-bottom: 60px;
+    margin-bottom: -30px;
   }
 }
 .benefits__item {
