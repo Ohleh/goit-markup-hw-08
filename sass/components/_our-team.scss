@@ -1,7 +1,8 @@
 .our-team {
   background-color: $our-team-bg-colour;
   margin-top: 94px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  // phone + ipad: вимикнений верхній марджин
+  @media screen and (max-width: 1139px) {
     margin-top: 0;
   }
 }
@@ -14,7 +15,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 94px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  // phone + ipad: зменшений верхній марджин
+  @media screen and (max-width: 1139px) {
     padding-top: 60px;
   }
 }
@@ -30,10 +32,21 @@
   margin: 0 0;
   padding-top: 50px;
   padding-bottom: 94px;
+  // phone: падінг-топ до тайтла. і падінг-ботом до
   @media screen and (min-width: 480px) and (max-width: 768px) {
-    padding-bottom: 60px;
     padding-top: 30px;
+    padding-bottom: 60px;
     display: block;
+  }
+  // ipad: падінг-топ до тайтла. і падінг-ботом до
+  // ipad: флекс для авто переноса сітки
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    // ipad костиль для нижнього падінга
+    margin-bottom: -15px;
   }
 }
 .our-team__card {
@@ -43,6 +56,15 @@
       margin-left: 0;
       margin-top: 30px;
     }
+  }
+  // ipad зміна розміру карточки
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    width: 354px;
+  }
+  // ipad авто перенос сітки
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    width: calc(100% - 3 * 15px) / 2;
+    margin: 15px;
   }
 }
 
@@ -88,7 +110,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  // phone + ipad: центрування соц іконок
+  @media screen and (min-width: 480px) and (max-width: 1139px) {
     justify-content: center;
   }
 }

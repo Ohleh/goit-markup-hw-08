@@ -1,5 +1,6 @@
 .whatwedo {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  // phone + ipad: вимикання
+  @media screen and (max-width: 1139px) {
     display: none;
   }
 }

@@ -59,8 +59,18 @@
 //
 //
 //phone + ipad  лише длнав ліст        @media screen and (max-width: 1139px)
-// 1
-// @import "../sass/components/feature";
+//
+//
+//
+// phone + ipad: авто перенос сітки
+// ul: @media screen and (min-width: 768px) and (max-width: 1139px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// li: @media screen and (min-width: 768px) and (max-width: 1139px) {
+//     width: calc(100% - 3 * 15px) / 2;
+//     margin: 15px;
+//   }
 
 .feature-set {
   list-style: none;
