@@ -34,8 +34,10 @@
   padding-bottom: 94px;
   // phone: падінг-топ до тайтла. і падінг-ботом до
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    padding-top: 30px;
-    padding-bottom: 60px;
+    // кастиль 15+15
+    padding-top: 15px;
+    // кастиль 45+15
+    padding-bottom: 45px;
     display: block;
   }
   // ipad: падінг-топ до тайтла. і падінг-ботом до
@@ -53,14 +55,19 @@
 .our-team__card {
   & + .our-team__card {
     // margin-left: 0px;
+    //  коригуємо лівий марджин для calc
     @media screen and (min-width: 480px) and (max-width: 768px) {
-      margin-left: 0;
+      margin-left: 15px;
       margin-top: 30px;
     }
   }
   // ipad зміна розміру карточки
   @media screen and (min-width: 768px) and (max-width: 1170px) {
     width: 354px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: calc(100% - 2 * 15px) / 1;
+    margin: 15px;
   }
   // ipad авто перенос сітки
   @media screen and (min-width: 768px) and (max-width: 1170px) {
