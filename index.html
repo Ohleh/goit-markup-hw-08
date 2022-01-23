@@ -57,7 +57,7 @@
                
             </ul>
             <ul class="burger">
-                <a class="burger_link" href="#">
+                <a class="burger_link" href="./mobile.html">
                     <svg class="burger_icon">
                         <use href="./images/svg/burger-close.svg#burger"></use>
                     </svg>
@@ -405,6 +405,69 @@
     </div>
 </footer>
 <!-- <include src="../partials/footer.html"></include> -->
+    <!-- <include src="../partials/footer.html"></include> -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="container">
+            <div class="modal">
+                <div class="modal__close">
+                    <button type="button" class="modal__close-button" data-modal-close>
+                        <svg class="modal__close__link">
+                            <use href="./images/modal/modal-icons.svg#modal-icon-x"></use>
+                        </svg>
+                    </button>
+                </div>
+                <b class="modal__headline">Оставьте свои данные, мы вам перезвоним</b>
+                <form class="modal__form js-speaker-form">
+                    <label class="form__field">
+                        <span class="form__label">Имя</span>
+                        <input type="text" name="name" placeholder="" class="form__input" autofocus />
+                        <svg class="form__icon">
+                            <use href="./images/modal/modal-icons.svg#modal-icon-name"></use>
+                        </svg>
+                    </label>
     
+                    <label class="form__field">
+                        <span class="form__label">Телефон</span>
+                        <input type="tel" name="tel" placeholder="" class="form__input" />
+                        <svg class="form__icon">
+                            <use href="./images/modal/modal-icons.svg#modal-icon-phone"></use>
+                        </svg>
+                    </label>
+    
+                    <label class="form__field">
+                        <span class="form__label">Почта</span>
+                        <input type="email" name="email" placeholder="" autocomplete="off" class="form__input" />
+                        <svg class="form__icon">
+                            <use href="./images/modal/modal-icons.svg#modal-icon-email"></use>
+                        </svg>
+                    </label>
+    
+                    <label for="comment" class="form__comment">
+                        <span class="form__label">Комментарий</span>
+                        <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"
+                            class="form__input"></textarea>
+                    </label>
+    
+                    <!-- <div class="form-field-agreement"> -->
+                    <label class="modal__agreement">
+                        <input class="checkbox" type="checkbox" name="agreement" value="agreement">
+                        <span class="agreement__checkbox"></span>
+                        <span class="agreement__text">Соглашаюсь с рассылкой и принимаю <a href="#"><span
+                                    class="agreement__terms">Условия договора</span></a> </span>
+    
+                    </label>
+    
+                    <!-- </div> -->
+    
+                    <div class="modal__confirm-button">
+                        <button type="submit" class="confirm-button"> <span class="confirm-button__text">Отправить</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <include src="../partials/modal-window.html"></include> -->
+<script src="./js/modal.js"></script>
 </body>
 </html>

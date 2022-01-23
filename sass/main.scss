@@ -44,8 +44,21 @@
 // -- portfolio
 @import "../sass/components/mobile-page";
 
-// терлефон:  @media screen and (min-width: 480px) and (max-width: 768px) {
-// плашет: @media screen and (min-width: 768px) and (max-width: 1140px)
+// -- modal-window
+//  modal-window
+@import "../sass/components/modal-window";
+
+// phone
+// терлефон:       @media screen and (min-width: 480px) and (max-width: 767px)
+//
+// ipad
+// плашет:         @media screen and (min-width: 768px) and (max-width: 1139px)
+//
+//
+// phone + ipad:   @media screen and (min-width: 480px) and (max-width: 1139px)
+//
+//
+//phone + ipad  лише длнав ліст        @media screen and (max-width: 1139px)
 // 1
 // @import "../sass/components/feature";
 
