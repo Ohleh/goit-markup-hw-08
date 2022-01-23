@@ -893,14 +893,15 @@ textarea {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .customer__list {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 60px;
-    margin-bottom: -30px;
+    margin-top: -15px;
+    margin-bottom: -15px;
   }
 }
 
@@ -945,8 +946,7 @@ textarea {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .customer__item + .customer__item {
-    margin-left: 0;
-    margin-bottom: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -967,6 +967,14 @@ textarea {
   .customer__item {
     width: 226px;
     padding: 16px 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .customer__item {
+    width: -webkit-calc(100% - 3 * 15px)/2;
+    width: calc(100% - 3 * 15px)/2;
+    margin: 15px;
   }
 }
 
