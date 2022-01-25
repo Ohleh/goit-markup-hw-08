@@ -19,10 +19,11 @@
 </head>
 <body>
 <header>
+  
     <div class="container">
         <div class="header">
 
-         
+        
             <a href="./index.html" class="logo"> <span class="logo logo--start">Web</span><span
                     class="logo logo--end">Studio</span></a>
             
@@ -56,14 +57,14 @@
                 </li>
                
             </ul>
-            <di v class="burger">
+            <div class="burger">
                 <!-- <button type="button" data-modal-open>Open </button>> -->
 
 
                 <button 
                     type="button" 
                     class="menu-button is-open" 
-                    aria-expanded="false" 
+                    aria-expanded="true" 
                     aria-controls="menu-container"
                     data-menu-button> 
                     
@@ -73,17 +74,21 @@
                     height="24" 
                     aria-label="Swich mobile menu"
                     >
-                        <use class="icon-menu" href="./images/svg/burger-close.svg#burger"></use>
+                        
                         <use class="icon-cross" href="./images/svg/burger-close.svg#close"></use>
+                        <use class="icon-menu" href="./images/svg/burger-close.svg#burger"></use>
                     
                     </svg>
                 </button>
             </div>
             
-
+                   <!-- <div class="menu-container">
+                       КОНТЕНТ
+                   </div>
+                    -->
 
                 <!-- контетк мобильного меню старт -->
-                <div class="menu-container" id="menu-container" data-menu>
+                <div class="menu-container is-open" id="menu-container" data-menu>
                     <div class="mobile-page">
                         <div class="mobile__header">
                     
@@ -100,14 +105,14 @@
                                 <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Контакты</a></li>
                             </ul>
                         </nav>
-                        <main>
+                        <div>
                             <ul class="contact-mobile__list">
                                 <li class="contact-mobile__item"><a href="mailto:info@example.com"
                                         class="contact-mobile__link-mail">info@example.com</a><br></li>
                                 <li class="contact-mobile__item"><a href="tel:+380991111100" class="contact-mobile__link-phone">+38 099 111
                                         11 00</a></li>
                             </ul>
-                        </main>
+                        </div>
                         <div>
                             <ul class="footer__mob-list">
                                 <li class="footer__mob-item"><a class="footer__mob-link" href="#">Instagram</a></li>
@@ -123,8 +128,8 @@
                     <!-- контетк мобильного меню енд -->
                 </div>
 
-                    <!-- </a> -->
-             </div>
+
+             
             
         </div>
     </div>
@@ -137,6 +142,7 @@
         <!-- КНОПКА відкриття модального вікна -->
         <button type="button" class="hero__button" data-modal-open> <span class="hero__button-text">Заказать
                 услугу</span></button>
+                
     </section>
     <!-- <include src="../partials/hero.html"></include> -->
     <!-- секция преимуществ -->
@@ -578,8 +584,8 @@
     </div> -->
 
     <!-- <include src="../partials/modal-window.html"></include> -->
-<script src="./js/menu.js"></script>
+
 <script src="./js/modal.js"></script>
-<script src=“./js/mobile-menu.js”></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

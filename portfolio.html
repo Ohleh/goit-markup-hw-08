@@ -54,13 +54,70 @@
                     </li>
     
                 </ul>
-                <ul class="burger">
-                    <a class="burger_link" href="./mobile.html">
-                        <svg class="burger_icon">
-                            <use href="./images/svg/burger-close.svg#burger"></use>
-                        </svg>
-                    </a>
-                </ul>
+                            <div class="burger">
+                                <!-- <button type="button" data-modal-open>Open </button>> -->
+                            
+                            
+                                <button type="button" class="menu-button is-open" aria-expanded="true" aria-controls="menu-container"
+                                    data-menu-button>
+                            
+                                    <!-- <a class="burger_link" href="./mobile.html">  -->
+                                    <svg width="24" height="24" aria-label="Swich mobile menu">
+                            
+                                        <use class="icon-cross" href="./images/svg/burger-close.svg#close"></use>
+                                        <use class="icon-menu" href="./images/svg/burger-close.svg#burger"></use>
+                            
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <!-- <div class="menu-container">
+                                                   КОНТЕНТ
+                                               </div>
+                                                -->
+                            
+                            <!-- контетк мобильного меню старт -->
+                            <div class="menu-container is-open" id="menu-container" data-menu>
+                                <div class="mobile-page">
+                                    <div class="mobile__header">
+                            
+                                        <a class="mobile__close-link" href="#">
+                                            <svg class="mobile__close-icon">
+                                                <use href="./images/svg/burger-close.svg#burger-close"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <nav class="nav__mobile">
+                                        <ul class="nav__mobile-list">
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="./index.html">Студия</a></li>
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="./portfolio.html">Портфолио</a></li>
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div>
+                                        <ul class="contact-mobile__list">
+                                            <li class="contact-mobile__item"><a href="mailto:info@example.com"
+                                                    class="contact-mobile__link-mail">info@example.com</a><br></li>
+                                            <li class="contact-mobile__item"><a href="tel:+380991111100" class="contact-mobile__link-phone">+38 099
+                                                    111
+                                                    11 00</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="footer__mob-list">
+                                            <li class="footer__mob-item"><a class="footer__mob-link" href="#">Instagram</a></li>
+                            
+                                            <li class="footer__mob-item"><a class="footer__mob-link" href="#">Twitter</a></li>
+                            
+                                            <li class="footer__mob-item"><a class="footer__mob-link" href="#">Facebook</a></li>
+                            
+                                            <li class="footer__mob-item"><a class="footer__mob-link" href="#">LinkedIn</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- контетк мобильного меню енд -->
+                            </div>
+                
                  <!-- <include src="../partials/contact-nav.html"></include> -->
             </div>
         </div>
@@ -301,6 +358,6 @@
     </div>
 </footer>
 <!-- <include src="../partials/footer.html"></include> -->
-    <script src=“./js/mobile-menu.js”></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

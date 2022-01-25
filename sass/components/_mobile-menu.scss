@@ -1,19 +1,6 @@
 // menu-container  це контент mobile-menu
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  height: 796px;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
-  & .is-open {
-    display: block;
-  }
+.header {
+  position: relative;
 }
 
 .menu-container {
@@ -23,12 +10,13 @@
   left: 0;
   width: 100%;
 
-  height: 400px;
-  background-color: palegoldenrod;
+  // height: 796px;
+  height: 828px;
+  background-color: $primary-bg-color;
   padding: 20px;
-  text-align: center;
+
   font-size: 20px;
-  & .is-open {
+  &.is-open {
     display: block;
   }
 }
