@@ -1185,10 +1185,9 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1170px) {
   .footer__second {
-    display: block;
-    margin-left: 70px;
-    margin-top: 15px;
-    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding-left: 167px;
   }
 }
 
