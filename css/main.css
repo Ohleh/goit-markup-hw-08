@@ -1176,6 +1176,7 @@ textarea {
   list-style: none;
   padding-top: 20px;
   padding-left: 0;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 480px) and (max-width: 1170px) {
@@ -1188,6 +1189,13 @@ textarea {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer__second__social {
+    padding-top: -30px;
+    margin-bottom: 0;
   }
 }
 
