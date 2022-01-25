@@ -1,8 +1,67 @@
-.mobile-page {
-  display: inline-block;
-  width: 480px;
-  margin: 0;
+// menu-container  це контент mobile-menu
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  height: 796px;
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  & .is-open {
+    display: block;
+  }
 }
+
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button .is-open .icon-cross {
+  display: block;
+}
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+
+.burger {
+  position: relative;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  height: 400px;
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  & .is-open {
+    display: block;
+  }
+}
+
+// моя сторінка
+//
+//mobile-page позиционуэ хрестик в кутку
+// .mobile-page {
+//   display: inline-block;
+//   width: 480px;
+//   margin: 0;
+// }
 .mobile__close-icon {
   width: 19px;
   height: 19px;

@@ -14,6 +14,7 @@
       transform: translate(-50%, -50%) scale(0.9);
     }
   }
+  overflow-y: scroll;
 }
 .modal {
   position: absolute;
@@ -24,9 +25,22 @@
   background-color: $primary-bg-color;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // padding: 40px;
+  // можна додатий тут padding: 40px; и забрати в ".modal__form" тоди ришыться проблема з верзхним падынком пры вузькому скрини
   // phone + ipad зміна ширини модального вінка
-  @media screen and (min-width: 480px) and (max-width: 1140px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
+    // calc додаэ видступы модального замисть падинга
+    // width: calc(450px - 15px);
+    //
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    width: 450px;
+    // margin-top: 208px;
   }
 }
 .modal__close {
@@ -264,3 +278,29 @@
   line-height: 1.88;
   color: $primary-bg-color;
 }
+
+// *** mark repeta for mobile ***
+
+// .Mbackdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+
+//   background-color: rgba(0, 0, 0, 0.3);
+
+//   /// padding: 94px 15px;
+// }
+
+// // не показує постійно висячу сторінку mobile.html
+// .Mbackdrop.Mis-hidden {
+//   display: none;
+// }
+
+// .Mmodal {
+//   /// padding: 20px;
+//   background-color: rgb(215, 255, 136);
+// }
+
+// *** mark repeta for mobile ***
