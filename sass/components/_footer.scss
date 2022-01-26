@@ -6,27 +6,16 @@
   padding-bottom: 60px;
 }
 .footer__position {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .footer__position {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     display: block;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1170px) {
-  .footer__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     display: flex;
   }
 }
-
 .footer__adress {
   display: block;
   font-family: $font-family;
@@ -58,7 +47,6 @@
   display: inline-block;
   color: $footer-adress-contact;
   margin-top: 9px;
-
   @media screen and (min-width: 480px) and (max-width: 768px) {
     display: inline-block;
     text-align: center;
@@ -91,35 +79,25 @@
 }
 .footer__second {
   display: inline-block;
-  text-align: center;
-  padding-left: 70px;
-
-  // padding-left: 0;
-  // margin-right: 93px;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // padding-top: 5px;
-  // list-style: none;
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .footer__second {
+  padding-left: 0;
+  margin-right: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  list-style: none;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: block;
     margin: 0;
     margin-bottom: 60px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1170px) {
-  .footer__second {
-    display: block;
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    display: inline-block;
     text-align: center;
-    margin-bottom: 60px;
-    margin-left: -50px;
+    padding-left: 70px;
+    // margin-top: 15px;
+    // text-align: center;
   }
-
-  // margin-top: 15px;
-  // text-align: center;
 }
-
 .footer__title {
   color: $primary-bg-color;
   font-style: normal;
@@ -231,7 +209,6 @@
   border: 0ch;
   padding: 0;
   margin-top: 20px;
-
   @media screen and (min-width: 480px) and (max-width: 768px) {
     display: block;
     // outline: 0.5px solid rgb(255, 71, 92);
@@ -269,10 +246,3 @@
     background-image: url(../images/svg/icon-send.svg);
   }
 }
-
-// .footer__position-tablet {
-//   @media screen and (min-width: 768px) and (max-width: 1170px) {
-//     display: flex;
-
-//   }
-// }
