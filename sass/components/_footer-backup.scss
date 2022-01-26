@@ -7,8 +7,11 @@
 }
 .footer__position {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   @media screen and (min-width: 480px) and (max-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
     display: block;
   }
 }
@@ -62,34 +65,38 @@
   padding-left: 0;
   margin-right: 70px;
   //   padding-right: 70px;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: block;
     text-align: center;
-    margin: 0;
+    margin-right: 0;
   }
   @media screen and (min-width: 768px) and (max-width: 1170px) {
-    display: block;
+    display: inline-block;
     text-align: center;
-    margin-right: 70px;
+    margin: 0;
+    padding-left: 76px;
   }
 }
 .footer__second {
   padding-left: 0;
-  //   padding-right: 93px;
   margin-right: 93px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 5px;
   list-style: none;
-  //   margin: 0;
+
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: block;
-    // outline: 0.5px solid rgb(200, 255, 71);
     margin: 0;
     margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1170px) {
-    display: block;
+    display: inline-block;
+    margin: 0;
+    padding-left: 167px;
+
+    // margin-top: 15px;
+    // text-align: center;
   }
 }
 .footer__title {
@@ -113,9 +120,14 @@
   list-style: none;
   padding-top: 20px;
   padding-left: 0;
+  margin-top: 0;
   @media screen and (min-width: 480px) and (max-width: 1170px) {
     display: flex;
     justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    padding-top: -30px;
+    margin-bottom: 0;
   }
 }
 .footer__second__list {
@@ -145,8 +157,8 @@
   margin: 0;
   // outline: 0.5px solid rgb(200, 255, 71);
   @media screen and (min-width: 768px) and (max-width: 1170px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
   }
 }
 .footer__subscribe {
