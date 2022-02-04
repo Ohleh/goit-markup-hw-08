@@ -12,29 +12,35 @@
 // }
 
 .menu-container {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+
   // height: 796px;
 
   height: 828px;
   background-color: $primary-bg-color;
+
   padding: 20px;
   font-size: 20px;
 
   &.is-open {
     display: block;
+    z-index: 1;
   }
+  // @media screen and (max-width: 767px) {
 
-  @media screen and (min-width: 767px) {
-    display: none;
-  }
-
-  // @media screen and (min-width: 768px) and (max-width: 1170px) {
-  // z-index: 1;
   // }
 }
+
+// .menu-container-hide {
+//   display: block;
+//   @media screen and (min-width: 767px) {
+//     display: none;
+//   }
+// }
 
 // моя сторінка
 //
