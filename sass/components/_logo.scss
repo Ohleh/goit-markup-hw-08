@@ -27,3 +27,9 @@
 .logo__footer--end {
   color: $primary-bg-color;
 }
+
+.logo-header {
+  @media screen and (max-width: 768px) {
+    margin-left: 15px;
+  }
+}
