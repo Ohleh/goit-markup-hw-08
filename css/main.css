@@ -1749,6 +1749,16 @@ textarea {
   z-index: 1;
 }
 
+.menu-container-hide {
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-container-hide {
+    display: none;
+  }
+}
+
 .mobile__close-icon {
   width: 19px;
   height: 19px;
