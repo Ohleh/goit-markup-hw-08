@@ -1,0 +1,56 @@
+.whatwedo {
+  // phone + ipad: вимикання
+  @media screen and (max-width: 1170px) {
+    display: none;
+  }
+}
+.whatwedo__headline {
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+.whatwedo__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.whatwedo__item {
+  margin-bottom: -10px;
+  position: relative;
+  & + .whatwedo__item {
+    margin-left: 30px;
+  }
+}
+.whatwedo__item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  vertical-align: 50%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+  background-image: linear-gradient(
+    to right,
+    $whatwedo-bg-gradient-color 0%,
+    $whatwedo-bg-gradient-color 100%
+  );
+  margin-bottom: 7px;
+  margin-top: 0;
+}

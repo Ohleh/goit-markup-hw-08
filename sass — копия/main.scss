@@ -1,0 +1,80 @@
+@import "../sass/utils/base";
+
+@import "../sass/utils/variables";
+
+@import "../sass/components/container";
+
+// logo
+@import "../sass/components/logo";
+
+// index__nav  --  секция навигации
+@import "../sass/components/nav";
+
+// index__contact-nav  --  секция контактов
+@import "../sass/components/contact-nav";
+
+// index__contact-nav  --  секция контактов
+@import "../sass/components/burger";
+
+// index__hero  --  секция hero
+@import "../sass/components/hero";
+
+// index__benefits  --  секция преимуществ
+@import "../sass/components/benefits";
+
+// index__whatwedo  --  секция Чем мы занимаемся
+@import "../sass/components/whatwedo";
+
+// index__our-team  --  секция Наша команда
+@import "../sass/components/our-team";
+
+// index__customer  --  секция постоянныe клиенты
+@import "../sass/components/customer";
+
+// index  portfolio__footer  --  секция футер
+@import "../sass/components/footer";
+
+// -- portfolio
+//  portfolio__button-portfolio  -- кнопоки портфолио
+@import "../sass/components/button-portfolio";
+
+//  portfolio__product-portfolio  -- продукти портфолио
+@import "../sass/components/product-portfolio";
+
+// -- portfolio
+@import "../sass/components/mobile-menu";
+
+// -- modal-window
+//  modal-window
+@import "../sass/components/modal-window";
+
+// phone
+// терлефон:       @media screen and (min-width: 480px) and (max-width: 767px)
+//
+// ipad
+// плашет:         @media screen and (min-width: 768px) and (max-width: 1170px)
+//
+//
+// phone + ipad:   @media screen and (min-width: 480px) and (max-width: 1170px)
+//
+//
+//phone + ipad  лише длнав ліст        @media screen and (max-width: 1170px)
+//
+//
+//
+// phone + ipad: авто перенос сітки:
+// ul: ipad флекс для авто переносу сітки
+//     @media screen and (min-width: 768px) and (max-width: 1139px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// li: ipad авто перенос сітки
+//     @media screen and (min-width: 768px) and (max-width: 1139px) {
+//     width: calc(100% - 3 * 15px) / 2;
+//     margin: 15px;
+//   }
+
+.feature-set {
+  list-style: none;
+}
+// @import "../sass/components/feature";

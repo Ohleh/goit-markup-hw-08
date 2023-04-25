@@ -1,0 +1,47 @@
+// Палитра цветов макета и наборы шрифтов вынесены в переменные
+
+// root colours
+$accent-color-button: #2196f3;
+$primary-text-color: #757575;
+$secondary-text-color: #212121;
+$primary-bg-color: #ffffff;
+$button-hover-text: rgba(255, 255, 255, 1);
+$social-base-color: #afb1b8;
+$background-color: rgba(245, 244, 250, 1);
+$pre-hero-line: rgba(236, 236, 236, 1);
+
+// benefits
+$benefits-item-bg-color: rgba(245, 244, 250, 1);
+
+// footer colours
+$footer-bg-color: #2f303a;
+$footer-adress-street: rgba(255, 255, 255, 1);
+$footer-adress-contact: rgba(255, 255, 255, 0.6);
+
+// modal window contain colours
+$backdrop-bg-colour: rgba(0, 0, 0, 0.2);
+$form-comment: rgba(117, 117, 117, 0.5);
+$textarea-border: rgba(33, 33, 33, 0.2);
+$agreement-checkbox: black;
+$form-input-border: rgba(33, 33, 33, 0.2);
+$confirm-button-box-shadow: rgba(0, 0, 0, 0.15);
+$confirm-button-hover: #188ce8;
+
+// our-team
+$our-team-bg-colour: #f5f4fa;
+
+// product__element--overlay
+$product-element-overlay: rgba(33, 150, 243, 0.9);
+$product-info-border: rgba(238, 238, 238, 1);
+$product-title-color: rgba(33, 33, 33, 1);
+$product-example-color: rgba(117, 117, 117, 1);
+
+// whatwedo__item__title
+$whatwedo-bg-gradient-color: rgba(47, 48, 58, 0.8);
+$form-comment-placeholder: rgba(117, 117, 117, 0.5);
+
+// fonts
+// body font settings
+
+$font-family: Roboto, VHelvetica Neue, sans-serif;
+$logo-font-family: Raleway, sans-serif;

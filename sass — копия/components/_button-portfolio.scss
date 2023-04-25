@@ -1,0 +1,60 @@
+.button-portfolio {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 60px;
+    margin-left: 15px;
+    //phone  костиль для кнопок
+    // margin-bottom: -15px;
+    // padding-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
+    //phone  костиль для кнопок
+    margin-bottom: -15px;
+    // padding-bottom: 10px;
+  }
+}
+.button-portfolio__item {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: rgba(33, 33, 33, 1);
+  background-color: $background-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 0 solid rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  margin-bottom: 0;
+  padding: 6px 22px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & + .button-portfolio__item {
+    margin-left: 8px;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 8px;
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+}
+.button-portfolio__item:hover,
+.button-portfolio__item:focus {
+  color: $button-hover-text;
+  background-color: $accent-color-button;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}

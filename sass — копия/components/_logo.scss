@@ -1,0 +1,35 @@
+.logo {
+  font-family: $logo-font-family;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  // padding-left: 15px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+.logo--start {
+  color: $accent-color-button;
+  // phone + ipad:  крайні відступи  від країв
+  @media screen and (min-width: 480px) and (max-width: 1170px) {
+    padding-left: 15px;
+  }
+}
+.logo--end {
+  color: $secondary-text-color;
+}
+.logo__footer--end {
+  color: $primary-bg-color;
+}
+
+.logo-header {
+  @media screen and (max-width: 768px) {
+    margin-left: 15px;
+  }
+}
